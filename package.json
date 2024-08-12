@@ -1,0 +1,20 @@
+{
+  "name": "prefer-importing-jest-globals-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "yarn eslint",
+    "eslint": "yarn eslint_base --cache --cache-strategy content .",
+    "eslint_base": "NODE_OPTIONS='--max-old-space-size=5120' eslint --report-unused-disable-directives-severity error --quiet"
+  },
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-jest": "^28.6.0",
+    "globals": "^13.12.1",
+    "typescript": "^5.5.0"
+  }
+}
